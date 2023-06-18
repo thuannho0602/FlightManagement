@@ -1,0 +1,17 @@
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\bin\Debug\net6.0\FlightManagement.DataAccess.deps.json
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\bin\Debug\net6.0\FlightManagement.DataAccess.runtimeconfig.json
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\bin\Debug\net6.0\FlightManagement.DataAccess.dll
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\bin\Debug\net6.0\FlightManagement.DataAccess.pdb
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\bin\Debug\net6.0\FlightManagement.Entity.dll
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\bin\Debug\net6.0\FlightManagement.Entity.pdb
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\FlightManagement.DataAccess.csproj.AssemblyReference.cache
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\FlightManagement.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\FlightManagement.DataAccess.AssemblyInfoInputs.cache
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\FlightManagement.DataAccess.AssemblyInfo.cs
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\FlightManagement.DataAccess.csproj.CoreCompileInputs.cache
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\FlightManagement.DataAccess.csproj.CopyComplete
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\FlightManagement.DataAccess.dll
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\refint\FlightManagement.DataAccess.dll
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\FlightManagement.DataAccess.pdb
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\FlightManagement.DataAccess.genruntimeconfig.cache
+D:\Project\FlightManagement.API\FlightManagement.DataAccess\obj\Debug\net6.0\ref\FlightManagement.DataAccess.dll

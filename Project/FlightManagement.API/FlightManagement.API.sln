@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManagement.API", "FlightManagement.API\FlightManagement.API.csproj", "{AA664343-0E45-457E-B008-9F1EAD9F4572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManagement.DataAccess", "FlightManagement.DataAccess\FlightManagement.DataAccess.csproj", "{84E0AC7C-6F2C-4E7F-86ED-34448D6690C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManagement.Entity", "FlightManagement.Entity\FlightManagement.Entity.csproj", "{A021C899-D602-402D-8FC4-B08E2166D430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManagement.Model", "FlightManagement.Model\FlightManagement.Model.csproj", "{755C237D-6B7B-4C5A-B3E6-7CABC34A6F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManagement.Repository", "FlightManagement.Repository\FlightManagement.Repository.csproj", "{FA6331B0-B44B-471D-8424-3584735BCC40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManagement.Services", "FlightManagement.Services\FlightManagement.Services.csproj", "{7BD7299E-0794-44E5-A14D-0FEDAA4EEAA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA664343-0E45-457E-B008-9F1EAD9F4572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA664343-0E45-457E-B008-9F1EAD9F4572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA664343-0E45-457E-B008-9F1EAD9F4572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA664343-0E45-457E-B008-9F1EAD9F4572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E0AC7C-6F2C-4E7F-86ED-34448D6690C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E0AC7C-6F2C-4E7F-86ED-34448D6690C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E0AC7C-6F2C-4E7F-86ED-34448D6690C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E0AC7C-6F2C-4E7F-86ED-34448D6690C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A021C899-D602-402D-8FC4-B08E2166D430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A021C899-D602-402D-8FC4-B08E2166D430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A021C899-D602-402D-8FC4-B08E2166D430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A021C899-D602-402D-8FC4-B08E2166D430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{755C237D-6B7B-4C5A-B3E6-7CABC34A6F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{755C237D-6B7B-4C5A-B3E6-7CABC34A6F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{755C237D-6B7B-4C5A-B3E6-7CABC34A6F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{755C237D-6B7B-4C5A-B3E6-7CABC34A6F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6331B0-B44B-471D-8424-3584735BCC40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6331B0-B44B-471D-8424-3584735BCC40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6331B0-B44B-471D-8424-3584735BCC40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6331B0-B44B-471D-8424-3584735BCC40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD7299E-0794-44E5-A14D-0FEDAA4EEAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD7299E-0794-44E5-A14D-0FEDAA4EEAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD7299E-0794-44E5-A14D-0FEDAA4EEAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD7299E-0794-44E5-A14D-0FEDAA4EEAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C51975CD-4B33-461D-91C3-87FD05F04B80}
+	EndGlobalSection
+EndGlobal

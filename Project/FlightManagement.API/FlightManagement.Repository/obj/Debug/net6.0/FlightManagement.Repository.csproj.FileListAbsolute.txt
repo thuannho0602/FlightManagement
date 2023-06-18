@@ -1,0 +1,17 @@
+D:\Project\FlightManagement.API\FlightManagement.Repository\bin\Debug\net6.0\FlightManagement.Repository.deps.json
+D:\Project\FlightManagement.API\FlightManagement.Repository\bin\Debug\net6.0\FlightManagement.Repository.dll
+D:\Project\FlightManagement.API\FlightManagement.Repository\bin\Debug\net6.0\FlightManagement.Repository.pdb
+D:\Project\FlightManagement.API\FlightManagement.Repository\bin\Debug\net6.0\FlightManagement.DataAccess.dll
+D:\Project\FlightManagement.API\FlightManagement.Repository\bin\Debug\net6.0\FlightManagement.Entity.dll
+D:\Project\FlightManagement.API\FlightManagement.Repository\bin\Debug\net6.0\FlightManagement.DataAccess.pdb
+D:\Project\FlightManagement.API\FlightManagement.Repository\bin\Debug\net6.0\FlightManagement.Entity.pdb
+D:\Project\FlightManagement.API\FlightManagement.Repository\obj\Debug\net6.0\FlightManagement.Repository.csproj.AssemblyReference.cache
+D:\Project\FlightManagement.API\FlightManagement.Repository\obj\Debug\net6.0\FlightManagement.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\FlightManagement.API\FlightManagement.Repository\obj\Debug\net6.0\FlightManagement.Repository.AssemblyInfoInputs.cache
+D:\Project\FlightManagement.API\FlightManagement.Repository\obj\Debug\net6.0\FlightManagement.Repository.AssemblyInfo.cs
+D:\Project\FlightManagement.API\FlightManagement.Repository\obj\Debug\net6.0\FlightManagement.Repository.csproj.CoreCompileInputs.cache
+D:\Project\FlightManagement.API\FlightManagement.Repository\obj\Debug\net6.0\FlightManagement.Repository.csproj.CopyComplete
+D:\Project\FlightManagement.API\FlightManagement.Repository\obj\Debug\net6.0\FlightManagement.Repository.dll
+D:\Project\FlightManagement.API\FlightManagement.Repository\obj\Debug\net6.0\refint\FlightManagement.Repository.dll
+D:\Project\FlightManagement.API\FlightManagement.Repository\obj\Debug\net6.0\FlightManagement.Repository.pdb
+D:\Project\FlightManagement.API\FlightManagement.Repository\obj\Debug\net6.0\ref\FlightManagement.Repository.dll

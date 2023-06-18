@@ -1,0 +1,12 @@
+D:\Project\FlightManagement.API\FlightManagement.Model\bin\Debug\net6.0\FlightManagement.Model.deps.json
+D:\Project\FlightManagement.API\FlightManagement.Model\bin\Debug\net6.0\FlightManagement.Model.dll
+D:\Project\FlightManagement.API\FlightManagement.Model\bin\Debug\net6.0\FlightManagement.Model.pdb
+D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.csproj.AssemblyReference.cache
+D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.AssemblyInfoInputs.cache
+D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.AssemblyInfo.cs
+D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.csproj.CoreCompileInputs.cache
+D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.dll
+D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\refint\FlightManagement.Model.dll
+D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.pdb
+D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\ref\FlightManagement.Model.dll
