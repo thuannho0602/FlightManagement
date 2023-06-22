@@ -26,7 +26,8 @@ builder.Services.AddTransient<IPlaneRepository, PlaneRepository>();
 builder.Services.AddScoped<IPlaneServices, PlaneServices>();
 builder.Services.AddTransient<IAirportDepartureRepository, AirportDepartureRepository>();
 builder.Services.AddScoped<IAirportDepartureServices, AirportDepartureServices>();
-
+builder.Services.AddTransient<IArrivalAirportRepository, ArrivalAirportRepository>();
+builder.Services.AddScoped<IArrivalAirportServices, ArrivalAirportServices>();
 
 
 var app = builder.Build();

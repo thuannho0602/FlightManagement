@@ -51,8 +51,9 @@ namespace FlightManagement.Services.Implementations
             {
                 _planeRepository.Delete(plane);
                 _planeRepository.SaveChanges();
+                return await Task.FromResult(true);
             }
-            return await Task.FromResult(true);
+            return await Task.FromResult(false);
         }
 
         public async Task<List<PlaneGetResponse>> GetAll()

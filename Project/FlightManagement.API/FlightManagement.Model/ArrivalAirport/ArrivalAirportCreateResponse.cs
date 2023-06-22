@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagement.Model.ArrivalAirport
 {
-    public class ArrivalAirportCreateResponse
+    public class ArrivalAirportCreateResponse 
     {
         public int Id { get; set; }
         public string Code { get; set; }

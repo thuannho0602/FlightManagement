@@ -53,6 +53,7 @@ namespace FlightManagement.Services.Implementations
             {
                 _airportDepartureRepository.Delete(airportDeparture);
                 _airportDepartureRepository.SaveChanges();
+                return await Task.FromResult(true);
             }
             return await Task.FromResult(false);
 
