@@ -24,6 +24,8 @@ builder.Services.AddSwaggerGen();
 //Add Services
 builder.Services.AddTransient<IPlaneRepository, PlaneRepository>();
 builder.Services.AddScoped<IPlaneServices, PlaneServices>();
+builder.Services.AddTransient<IAirportDepartureRepository, AirportDepartureRepository>();
+builder.Services.AddScoped<IAirportDepartureServices, AirportDepartureServices>();
 
 
 
