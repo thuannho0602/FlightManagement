@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\FlightManagement.API\\FlightManagement.API\\FlightManagement.API.csproj": {}
+    "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.API\\FlightManagement.API.csproj": {}
   },
   "projects": {
-    "D:\\Project\\FlightManagement.API\\FlightManagement.API\\FlightManagement.API.csproj": {
+    "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.API\\FlightManagement.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\FlightManagement.API\\FlightManagement.API\\FlightManagement.API.csproj",
+        "projectUniqueName": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.API\\FlightManagement.API.csproj",
         "projectName": "FlightManagement.API",
-        "projectPath": "D:\\Project\\FlightManagement.API\\FlightManagement.API\\FlightManagement.API.csproj",
+        "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.API\\FlightManagement.API.csproj",
         "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\FlightManagement.API\\FlightManagement.API\\obj\\",
+        "outputPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj": {
-                "projectPath": "D:\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj"
+              "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj": {
+                "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj"
+              },
+              "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Lib\\FlightManagement.Lib.csproj": {
+                "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Lib\\FlightManagement.Lib.csproj"
+              },
+              "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj": {
+                "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj"
+              },
+              "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Services\\FlightManagement.Services.csproj": {
+                "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Services\\FlightManagement.Services.csproj"
               }
             }
           }
@@ -49,6 +58,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.0, )"
@@ -87,14 +102,14 @@
         }
       }
     },
-    "D:\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj": {
+    "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj",
+        "projectUniqueName": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj",
         "projectName": "FlightManagement.DataAccess",
-        "projectPath": "D:\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj",
+        "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj",
         "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\obj\\",
+        "outputPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -116,8 +131,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj": {
-                "projectPath": "D:\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj"
+              "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj": {
+                "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj"
               }
             }
           }
@@ -169,14 +184,14 @@
         }
       }
     },
-    "D:\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj": {
+    "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj",
+        "projectUniqueName": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj",
         "projectName": "FlightManagement.Entity",
-        "projectPath": "D:\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj",
+        "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj",
         "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\FlightManagement.API\\FlightManagement.Entity\\obj\\",
+        "outputPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -198,6 +213,280 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Lib\\FlightManagement.Lib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Lib\\FlightManagement.Lib.csproj",
+        "projectName": "FlightManagement.Lib",
+        "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Lib\\FlightManagement.Lib.csproj",
+        "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
+        "outputPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Lib\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj",
+        "projectName": "FlightManagement.Model",
+        "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj",
+        "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
+        "outputPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Repository\\FlightManagement.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Repository\\FlightManagement.Repository.csproj",
+        "projectName": "FlightManagement.Repository",
+        "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Repository\\FlightManagement.Repository.csproj",
+        "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
+        "outputPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj": {
+                "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.DataAccess\\FlightManagement.DataAccess.csproj"
+              },
+              "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj": {
+                "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Entity\\FlightManagement.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Services\\FlightManagement.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Services\\FlightManagement.Services.csproj",
+        "projectName": "FlightManagement.Services",
+        "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Services\\FlightManagement.Services.csproj",
+        "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
+        "outputPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj": {
+                "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj"
+              },
+              "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Repository\\FlightManagement.Repository.csproj": {
+                "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Repository\\FlightManagement.Repository.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

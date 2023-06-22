@@ -26,7 +26,7 @@ namespace FlightManagement.Services.Implementations
             {
                 var plane = new Plane
                 {
-                    NamePlane= PlaneRequest.NamePlane,
+                    NamePlane = PlaneRequest.NamePlane,
                 };
                 _planeRepository.Add(plane);
                 _planeRepository.SaveChanges();
@@ -44,24 +44,68 @@ namespace FlightManagement.Services.Implementations
             }
         }
 
-        public Task<bool> DeletePlane(int id)
+        public async Task<bool> DeletePlane(int id)
         {
-            throw new NotImplementedException();
+            var plane = _planeRepository.FindByCondition(c => c.Id == id).FirstOrDefault();
+            if (plane != null)
+            {
+                _planeRepository.Delete(plane);
+                _planeRepository.SaveChanges();
+            }
+            return await Task.FromResult(true);
         }
 
-        public Task<List<PlaneGetResponse>> GetAll()
+        public async Task<List<PlaneGetResponse>> GetAll()
         {
-            throw new NotImplementedException();
+            var listplane = _planeRepository.FindAll().Select(c => new PlaneGetResponse
+            {
+                Id = c.Id,
+                NamePlane = c.NamePlane,
+            }).ToList();
+            return await Task.FromResult(listplane);
         }
 
-        public Task<PlaneGetResponse> GetById(int id)
+        public async Task<PlaneGetResponse> GetById(int id)
         {
-            throw new NotImplementedException();
+            var plane = _planeRepository.FindByCondition(c => c.Id == id).Select(c => new PlaneGetResponse
+            {
+                Id = c.Id,
+                NamePlane = c.NamePlane,
+            }).FirstOrDefault();
+            return await Task.FromResult(plane);
+
         }
 
-        public Task<PlaneUpdateResponse> UpdatePlane(PlaneUpdateRequest PlaneRequest)
+        public async Task<PlaneUpdateResponse> UpdatePlane(int id, PlaneUpdateRequest PlaneRequest)
         {
-            throw new NotImplementedException();
+            if (id > 0)
+            {
+                var diArrivalAirport = _planeRepository.FindByCondition(c => c.Id == id).FirstOrDefault();
+                if (diArrivalAirport != null)
+                {
+                    var plane = new Plane
+                    {
+                        Id = id,
+                        NamePlane = PlaneRequest.NamePlane,
+                    };
+                    _planeRepository.Update(plane);
+                    _planeRepository.SaveChanges();
+
+                    var planeResponse = new PlaneUpdateResponse
+                    {
+                        Id = plane.Id,
+                        NamePlane = plane.NamePlane,
+                    };
+                    return await Task.FromResult(planeResponse);
+                }
+                return new PlaneUpdateResponse();
+
+            }
+            else
+            {
+                return new PlaneUpdateResponse();
+            }
         }
     }
 }
+

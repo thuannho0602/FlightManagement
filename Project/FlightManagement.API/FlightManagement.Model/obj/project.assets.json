@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj",
+      "projectUniqueName": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj",
       "projectName": "FlightManagement.Model",
-      "projectPath": "D:\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj",
+      "projectPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\FlightManagement.Model.csproj",
       "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\FlightManagement.API\\FlightManagement.Model\\obj\\",
+      "outputPath": "D:\\FlightManagement\\Project\\FlightManagement.API\\FlightManagement.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

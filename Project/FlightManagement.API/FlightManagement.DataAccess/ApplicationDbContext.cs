@@ -19,5 +19,10 @@ namespace FlightManagement.DataAccess
         public virtual DbSet<Plane> Planes { get; set; }
         public virtual DbSet<AirportDeparture> Airports { get; set; }
         public virtual DbSet<ArrivalAirport> ArrivalAirports { get; set; }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+        }
     }
 }

@@ -10,3 +10,15 @@ D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightMa
 D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\refint\FlightManagement.Model.dll
 D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.pdb
 D:\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\ref\FlightManagement.Model.dll
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\bin\Debug\net6.0\FlightManagement.Model.deps.json
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\bin\Debug\net6.0\FlightManagement.Model.dll
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\bin\Debug\net6.0\FlightManagement.Model.pdb
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.csproj.AssemblyReference.cache
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.AssemblyInfoInputs.cache
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.AssemblyInfo.cs
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.csproj.CoreCompileInputs.cache
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.dll
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\refint\FlightManagement.Model.dll
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\FlightManagement.Model.pdb
+D:\FlightManagement\Project\FlightManagement.API\FlightManagement.Model\obj\Debug\net6.0\ref\FlightManagement.Model.dll

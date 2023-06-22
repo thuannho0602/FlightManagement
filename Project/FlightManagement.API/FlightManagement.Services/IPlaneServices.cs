@@ -12,7 +12,7 @@ namespace FlightManagement.Services
         Task<List<PlaneGetResponse>> GetAll();
         Task<PlaneGetResponse> GetById(int id);
         Task<PlaneCreateResponse> CreatePlane(PlaneCreateRequest PlaneRequest);
-        Task<PlaneUpdateResponse> UpdatePlane(PlaneUpdateRequest PlaneRequest);
+        Task<PlaneUpdateResponse> UpdatePlane(int id,PlaneUpdateRequest PlaneRequest);
         Task<bool> DeletePlane(int id);
 
 

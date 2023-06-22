@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagement.Repository.Implementations
 {
-    public class PlaneRepository:RepositoryBase<Plane,ApplicationDbContext>
+    public class PlaneRepository:RepositoryBase<Plane,ApplicationDbContext>, IPlaneRepository
     {
         public PlaneRepository(ApplicationDbContext context) : base(context)
         {

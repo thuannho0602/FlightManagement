@@ -1,4 +1,8 @@
 using FlightManagement.DataAccess;
+using FlightManagement.Repository;
+using FlightManagement.Repository.Implementations;
+using FlightManagement.Services;
+using FlightManagement.Services.Implementations;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,12 +11,21 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
              options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("FlightManagement.API")));
+
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//Add Services
+builder.Services.AddTransient<IPlaneRepository, PlaneRepository>();
+builder.Services.AddScoped<IPlaneServices, PlaneServices>();
+
+
 
 var app = builder.Build();
 

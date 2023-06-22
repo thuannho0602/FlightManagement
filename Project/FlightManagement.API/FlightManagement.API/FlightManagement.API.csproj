@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -17,6 +21,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FlightManagement.DataAccess\FlightManagement.DataAccess.csproj" />
+    <ProjectReference Include="..\FlightManagement.Lib\FlightManagement.Lib.csproj" />
+    <ProjectReference Include="..\FlightManagement.Model\FlightManagement.Model.csproj" />
+    <ProjectReference Include="..\FlightManagement.Services\FlightManagement.Services.csproj" />
   </ItemGroup>
 
 </Project>
