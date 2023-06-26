@@ -28,6 +28,15 @@ builder.Services.AddTransient<IAirportDepartureRepository, AirportDepartureRepos
 builder.Services.AddScoped<IAirportDepartureServices, AirportDepartureServices>();
 builder.Services.AddTransient<IArrivalAirportRepository, ArrivalAirportRepository>();
 builder.Services.AddScoped<IArrivalAirportServices, ArrivalAirportServices>();
+builder.Services.AddTransient<IFlightRepository, FlightRepository>();
+builder.Services.AddScoped<IFlightServices, FlightServices>();
+
+builder.Services.AddTransient<IHoldTheSeatRepository, HoldTheSeatRepository>();
+builder.Services.AddTransient<IClientRepository, ClientRepository>();
+
+builder.Services.AddTransient<IBookAPlaceRepository, BookAPlaceRepository>();
+builder.Services.AddScoped<IBookAPlaceServices, BookAPlaceServices>();
+
 
 
 var app = builder.Build();

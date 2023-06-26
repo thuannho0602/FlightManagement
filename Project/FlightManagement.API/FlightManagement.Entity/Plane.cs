@@ -13,5 +13,7 @@ namespace FlightManagement.Entity
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string NamePlane { get; set; }
+        //
+        public ICollection<Flight> Flights { get; set; }
     }
 }

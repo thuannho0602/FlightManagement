@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FlightManagement.API.Migrations
 {
-    public partial class AddDatabaseNew : Migration
+    public partial class NewDatabaseTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -74,6 +74,53 @@ namespace FlightManagement.API.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BookAPlace",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ReturnDay = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    FlightID = table.Column<int>(type: "int", nullable: false),
+                    ClientID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BookAPlace", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Client",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Sex = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Client", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "HoldtheSeat",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CodePlace = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    BookAPlaceId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HoldtheSeat", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -195,6 +242,42 @@ namespace FlightManagement.API.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Flight",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    DepartureTime = table.Column<TimeSpan>(type: "time", nullable: false),
+                    Time = table.Column<int>(type: "int", nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    AirportDepartureID = table.Column<int>(type: "int", nullable: false),
+                    ArrivalAirportID = table.Column<int>(type: "int", nullable: false),
+                    PlaneID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Flight", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Flight_AirportDeparture_AirportDepartureID",
+                        column: x => x.AirportDepartureID,
+                        principalTable: "AirportDeparture",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Flight_ArrivalAirport_ArrivalAirportID",
+                        column: x => x.ArrivalAirportID,
+                        principalTable: "ArrivalAirport",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Flight_Plane_PlaneID",
+                        column: x => x.PlaneID,
+                        principalTable: "Plane",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -233,16 +316,25 @@ namespace FlightManagement.API.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Flight_AirportDepartureID",
+                table: "Flight",
+                column: "AirportDepartureID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Flight_ArrivalAirportID",
+                table: "Flight",
+                column: "ArrivalAirportID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Flight_PlaneID",
+                table: "Flight",
+                column: "PlaneID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "AirportDeparture");
-
-            migrationBuilder.DropTable(
-                name: "ArrivalAirport");
-
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -259,13 +351,31 @@ namespace FlightManagement.API.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Plane");
+                name: "BookAPlace");
+
+            migrationBuilder.DropTable(
+                name: "Client");
+
+            migrationBuilder.DropTable(
+                name: "Flight");
+
+            migrationBuilder.DropTable(
+                name: "HoldtheSeat");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "AirportDeparture");
+
+            migrationBuilder.DropTable(
+                name: "ArrivalAirport");
+
+            migrationBuilder.DropTable(
+                name: "Plane");
         }
     }
 }

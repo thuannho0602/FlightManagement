@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlightManagement.API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230618155809_AddDatabaseNew")]
-    partial class AddDatabaseNew
+    [Migration("20230625133357_NewDatabaseTable")]
+    partial class NewDatabaseTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -64,6 +64,119 @@ namespace FlightManagement.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ArrivalAirport");
+                });
+
+            modelBuilder.Entity("FlightManagement.Entity.BookAPlace", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<int>("ClientID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FlightID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("ReturnDay")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("BookAPlace");
+                });
+
+            modelBuilder.Entity("FlightManagement.Entity.Client", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Sex")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Client");
+                });
+
+            modelBuilder.Entity("FlightManagement.Entity.Flight", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("AirportDepartureID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ArrivalAirportID")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("DepartureTime")
+                        .HasColumnType("time");
+
+                    b.Property<int>("PlaneID")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Time")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AirportDepartureID");
+
+                    b.HasIndex("ArrivalAirportID");
+
+                    b.HasIndex("PlaneID");
+
+                    b.ToTable("Flight");
+                });
+
+            modelBuilder.Entity("FlightManagement.Entity.HoldTheSeat", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("BookAPlaceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CodePlace")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("HoldtheSeat");
                 });
 
             modelBuilder.Entity("FlightManagement.Entity.Plane", b =>
@@ -281,6 +394,33 @@ namespace FlightManagement.API.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("FlightManagement.Entity.Flight", b =>
+                {
+                    b.HasOne("FlightManagement.Entity.AirportDeparture", "AirportDeparture")
+                        .WithMany("Flights")
+                        .HasForeignKey("AirportDepartureID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FlightManagement.Entity.ArrivalAirport", "ArrivalAirport")
+                        .WithMany("Flights")
+                        .HasForeignKey("ArrivalAirportID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FlightManagement.Entity.Plane", "Plane")
+                        .WithMany("Flights")
+                        .HasForeignKey("PlaneID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AirportDeparture");
+
+                    b.Navigation("ArrivalAirport");
+
+                    b.Navigation("Plane");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -330,6 +470,21 @@ namespace FlightManagement.API.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("FlightManagement.Entity.AirportDeparture", b =>
+                {
+                    b.Navigation("Flights");
+                });
+
+            modelBuilder.Entity("FlightManagement.Entity.ArrivalAirport", b =>
+                {
+                    b.Navigation("Flights");
+                });
+
+            modelBuilder.Entity("FlightManagement.Entity.Plane", b =>
+                {
+                    b.Navigation("Flights");
                 });
 #pragma warning restore 612, 618
         }

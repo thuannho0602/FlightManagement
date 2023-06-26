@@ -15,8 +15,13 @@ namespace FlightManagement.Entity
         public TimeSpan DepartureTime { get; set; }
         public int Time { get; set; }
         public decimal Price { get; set; }
-        public int AirportDeparture { get; set; }
+        //Khóa Ngoại
+        public int AirportDepartureID { get; set; }
+        public AirportDeparture AirportDeparture { get; set; }
         public int ArrivalAirportID { get; set; }
+        public ArrivalAirport ArrivalAirport { get; set; }
         public int PlaneID { get; set; }
+        public Plane Plane { get; set; }
+      
     }
 }

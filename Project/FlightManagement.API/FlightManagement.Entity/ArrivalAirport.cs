@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagement.Entity
 {
-    [Table("ArrivalAirport")]// Sân bay Đi
+    [Table("ArrivalAirport")]// Sân bay ĐĐến
     public class ArrivalAirport
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -15,5 +15,7 @@ namespace FlightManagement.Entity
         public string Code { get; set; }
         public string NameArrivalAirport { get; set; }
 
+        //
+        public ICollection<Flight> Flights { get; set; }
     }
 }
